@@ -4,43 +4,6 @@ import Book from './Book';
 import AddBook from "./AddBook";
 import { useSelector } from 'react-redux';
 
-const initBooks = [
-  {
-    id: 1,
-    name: "Shoedog",
-    author: "Paul knight",
-    fav: false,
-    wish: true,
-  },
-  {
-    id: 2,
-    name: "The alchemist",
-    author: "paulo coehello",
-    fav: true,
-    wish: false,
-  },
-  {
-    id: 3,
-    name: "Steve Jobs",
-    author: "Steve jobs",
-    fav: false,
-    wish: false,
-  } ,
-   {
-    id: 4,
-    name: "The Intelligent Investor",
-    author: "Warren Buffet",
-    fav: false,
-    wish: false,
-  },
-    {
-    id: 5,
-    name: "Wings Of Fire",
-    author: "A.P.J Abdul Kalam",
-    fav: false,
-    wish: false,
-  }
-];
 
 const Body = (props) => {
   const books = useSelector(state => state.books);
